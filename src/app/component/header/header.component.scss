@@ -1,0 +1,49 @@
+.header {
+  background-image: linear-gradient(to right, #D50032, #4F4A93 );
+  // position: fixed;
+  // top: 0;
+  // z-index: 1000;
+}
+.menu-btn {
+  color: #FFF;
+  background-color: transparent;
+}
+.header-text {
+  position: absolute;
+  // position: relative;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  font-size: 2.5rem;
+  color: #FFF;
+}
+.basket-btn {
+  color: #FFF;
+  background-color: transparent;
+}
+.bell-btn {
+  color: #FFF;
+  background-color: transparent;
+}
+.circle-btn {
+  border: 1px solid #FFF;
+  background-color: red;
+}
+.account-name {
+  font-size: 0.9rem;
+  color: #FFF;
+  margin: 10px;
+}
+.arrow-down-btn {
+  color: #FFF;
+  background-color: transparent;
+}
+mat-icon {
+    transform: scale(1.25);
+  }
+.spacer {
+  flex: 1 1 auto;
+}
+
+// Mat-Badge CSS
+::ng-deep .mat-badge-content {background: red;}

@@ -1,0 +1,24 @@
+<div>
+  <header>
+    <mat-toolbar>
+      <mat-toolbar-row class="header">
+        <span class="header-text">NABP</span>
+        <button class="menu-btn" mat-flat-button>
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span class="spacer"></span>
+        <button class="basket-btn" mat-flat-button>
+          <mat-icon matBadge="1" matBadgeSize="small">shopping_basket</mat-icon>
+        </button>
+        <button class="bell-btn" mat-flat-button>
+          <mat-icon matBadge="7" matBadgeSize="small" [matBadgeHidden]="hidden">notifications_none</mat-icon>
+        </button>
+        <h2 class="account-name">Hello, {{userName}}</h2>
+        <button class="circle-btn" mat-mini-fab> {{userInitials}} </button>
+        <button class="arrow-down-btn" mat-flat-button>
+          <mat-icon>arrow_drop_down</mat-icon>
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </header>
+</div>

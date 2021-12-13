@@ -1,0 +1,118 @@
+<div class="body">
+
+  <div class="first-card">
+    <mat-card>
+      <mat-card-content>
+        <button mat-flat-button><b>Get Ready</b></button> <!--  class="get-ready-link" -->
+        <button mat-flat-button>My Exam Activity</button> <!--  class="exam-activity-link" -->
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="container"> <!-- Contains background image -->
+
+        <h1 class="exam-services"><b>NABP</b> EXAM SERVICES</h1>
+
+        <div>
+          <mat-card class="second-card">
+            <mat-card-title class="practice-exams">
+              <h1><b>Practice Exams only</b></h1>
+              <h1><b>from NABP</b></h1>
+              <br>
+              <h1>Let's do this.</h1>
+              <br>
+            </mat-card-title>
+
+            <mat-card-content class="paragraph">
+              <p><i><b>Ready to take the big NAPLEX&#174; or the MPJE&#174;?</b></i> </p>
+              <br>
+              <p>
+                Get an edge on your licensure exams with practice exams only <br><br>
+                from NABP. Pre-NAPLEX and Pre-MPJE offer a realistic exam <br><br>
+                experience to help you know what to expecton exam day and <br><br>
+                prepare you for success when the stakes get high.
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+      <div fxLayout="row">
+        <mat-card class="nested-card-left">
+          <mat-card-title>Pre-NAPLEX&#174;</mat-card-title>
+          <mat-card-title style="font-size: large;">Practice Exam</mat-card-title>
+          <mat-card-content>
+            <p>You've spent hours upon hours studying.
+              Now take yourself to the next level of preparation
+              with this 100 question practice test.</p>
+              <button class="purchase-btn" mat-raised-button>Purchase</button>
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="nested-card-right">
+          <mat-card-title>Pre-MPJE&#174;</mat-card-title>
+          <mat-card-title style="font-size: large;">Practice Exam</mat-card-title>
+          <mat-card-content>
+            <p>Whether you're seeking your first license or preparing
+              to transferr an existing one, the Pre-MPJE is the
+              best way to get started
+            </p>
+              <button class="purchase-btn" mat-raised-button>Purchase</button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+  </div>
+
+  <div class="stats-card">
+    <mat-card fxLayout="row">
+      <mat-card-content>
+        <p>
+          Join the thousands of testing candidates who use the NABP practice exams
+          each year to get a trial run for test day that includes past questions,
+          similar formats, and similar timing.
+        </p>
+      </mat-card-content>
+
+      <mat-card-content>
+        <h1>14k+</h1>
+        <p>Pre-NAPLEX practice exams are administered each year.</p>
+      </mat-card-content>
+
+      <mat-card-content>
+        <h1>9k</h1>
+        <p>Pre-MPJE practice exams were administered in 2020-the first launch year.</p>
+      </mat-card-content>
+
+      <mat-card-content>
+        <h1>85%</h1>
+        <p>of candidates taking a practice exam passed their NAPLEX on the first attempt.</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div fxLayout="row" class="lower-section">
+    <mat-card class="pdf-box">
+      <mat-card-content>
+        <p>
+          We know the exam registration process can be overwhelming.
+          The Bulletin is your step-by-step guide to help you understand
+          everything you need to know for test day.
+          <br>
+          <br>
+          View and download the PDF for all the details.
+        </p>
+      </mat-card-content>
+      <mat-card-footer>
+        <button mat-button class="pdf-btn" (click)="downloadPdf()">
+          <mat-icon>picture_as_pdf</mat-icon>
+          Download it now
+        </button>
+      </mat-card-footer>
+    </mat-card>
+
+    <p class="right-side">
+      The Pre-NAPLEX and Pre-MPJE are the only official practice exams
+      from NABP and can be taken online, anytime, anywhere.
+    </p>
+
+  </div>
+
+</div>

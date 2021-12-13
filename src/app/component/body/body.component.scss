@@ -1,0 +1,126 @@
+.body {
+  padding-bottom: 25px;
+  img {
+    position: absolute;
+  }
+  .container {
+  background: url('../../../assets/images/img-PracticeExams-hero-fullscreen.jpg') no-repeat center center;
+  margin: 10px 50px 0px 50px;
+  }
+}
+
+.first-card button {
+  color: #D50032;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.exam-services {
+  color: #D50032;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+
+.second-card {
+  width: 50%;
+  background-color: transparent;
+  box-shadow: none;
+}
+  .practice-exams h1 {
+    width: 75%;
+    font-size: 50px;
+    // border: 1px solid black;
+  }
+  .lets-do-this {
+    font-size: 3rem;
+    margin: 40px 0;
+  }
+  .paragraph {
+    color: gray;
+    font-size: 23px;
+    margin-bottom: 25px;
+    // border: 1px solid black;
+  }
+
+.nested-card-left {
+  max-width: 250px;
+  background-image: linear-gradient(to bottom right, #C67946, #9F3778);
+  color: #FFF;
+  margin-bottom: 30px;
+}
+.nested-card-right {
+  max-width: 250px;
+  background-image: linear-gradient(to bottom right, #C67946, #9F3778);
+  color: #FFF;
+  margin: 0 0 30px 15px;
+}
+
+.purchase-btn {
+  color: #D50032;
+  font-weight: bold;
+  border: 2px solid #D50032;
+  border-radius: 20px;
+  margin: 10px 0 10px 50px;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.stats-card {
+  padding: 0px 50px;
+  mat-card-content {
+    max-width: 25%;
+    padding: 15px 25px;
+    h1{
+      font-size: 55px;
+      font-weight: bold;
+      color: #3399FF;
+      text-align: center;
+    }
+    p {
+    color: #4F4A93;
+    font-weight: bold;
+    font-size: 15px;
+    }
+  }
+}
+
+.lower-section {
+  padding: 0 50px;
+  margin-top: 15px;
+  .pdf-box {
+    width: 50%;
+    color: #FFF;
+    background-color: #922269;
+    .pdf-btn {
+      color: #FFF;
+      background-color: #D50032;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  .right-side {
+    width: 50%;
+    color: gray;
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
+
+// Custom scrollbar
+// .body {
+//   overflow-y: auto;
+// }
+// ::-webkit-scrollbar {
+//   width: 10px;
+// }
+// ::-webkit-scrollbar-track {
+//   border-radius: 10px;
+// }
+// ::-webkit-scrollbar-thumb {
+//   background: #999;
+//   border-radius: 10px;
+// }
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #aaa;
+// }
