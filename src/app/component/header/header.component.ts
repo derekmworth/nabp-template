@@ -7,12 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  // Mat-Badge hidden
-  hidden = true;
   userName = 'Derek Worth';
   userInitials = 'DW';
 
-
+  // Mat-Badge hidden
+  hidden = true;
 
   constructor() { }
 

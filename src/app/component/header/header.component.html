@@ -1,24 +1,64 @@
-<div>
-  <header>
-    <mat-toolbar>
-      <mat-toolbar-row class="header">
-        <span class="header-text">NABP</span>
-        <button class="menu-btn" mat-flat-button>
-          <mat-icon>menu</mat-icon>
+<!-- <header> -->
+  <mat-toolbar class="header-toolbar">
+    <mat-toolbar-row>
+      <span class="company-name">NABP</span>
+      <button class="sidenav-menu-btn" mat-icon-button (click)="sidenav.toggle()"> <!-- -->
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <span class="spacer"></span>
+
+      <div fxShow="true" fxHide.lt-md="true">
+        <button mat-icon-button>
+          <mat-icon matBadge="2" matBadgeSize="small">shopping_basket</mat-icon>
         </button>
-        <span class="spacer"></span>
-        <button class="basket-btn" mat-flat-button>
-          <mat-icon matBadge="1" matBadgeSize="small">shopping_basket</mat-icon>
-        </button>
-        <button class="bell-btn" mat-flat-button>
+        <button mat-icon-button>
           <mat-icon matBadge="7" matBadgeSize="small" [matBadgeHidden]="hidden">notifications_none</mat-icon>
         </button>
-        <h2 class="account-name">Hello, {{userName}}</h2>
-        <button class="circle-btn" mat-mini-fab> {{userInitials}} </button>
-        <button class="arrow-down-btn" mat-flat-button>
-          <mat-icon>arrow_drop_down</mat-icon>
+        <span class="username"> Hello, {{userName}} </span>
+        <button class="user-initials" mat-mini-fab> {{userInitials}} </button>
+      </div>
+
+      <div fxShow="false" fxShow.lt-md="true">
+        <button mat-icon-button [matMenuTriggerFor]="menu"><mat-icon>arrow_drop_down</mat-icon></button>
+      </div>
+
+
+    </mat-toolbar-row>
+  </mat-toolbar>
+<!-- </header> -->
+
+<mat-sidenav-container fxLayout.lt-sm="100%">
+  <mat-sidenav class="sidenav-right" #sidenav position="start">
+        <button class="sidenav-close-btn" mat-flat-button (click)="sidenav.toggle()">
+          <mat-icon>close</mat-icon>
+          Close
         </button>
-      </mat-toolbar-row>
-    </mat-toolbar>
-  </header>
-</div>
+        <mat-nav-list>
+          <mat-list-item>List item 1</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>List item 2</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>List item 3</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>List item 4</mat-list-item>
+          <mat-divider></mat-divider>
+        </mat-nav-list>
+  </mat-sidenav>
+</mat-sidenav-container>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon matBadge="2" matBadgeSize="small">shopping_basket</mat-icon>
+    <span>Shopping Basket</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon matBadge="7" matBadgeSize="small" [matBadgeHidden]="hidden">notifications_none</mat-icon>
+    <span>Notifications</span>
+  </button>
+  <button mat-menu-item>
+    <button mat-mini-fab> {{userInitials}} </button>
+    <span style="margin-left: 5px;"> {{userName}} </span>
+  </button>
+</mat-menu>
+

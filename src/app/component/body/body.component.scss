@@ -1,18 +1,18 @@
-.body {
-  padding-bottom: 25px;
-  img {
-    position: absolute;
-  }
-  .container {
+.background-image {
+  // z-index: -1;
   background: url('../../../assets/images/img-PracticeExams-hero-fullscreen.jpg') no-repeat center center;
-  margin: 10px 50px 0px 50px;
-  }
+  background-size: cover;
+  // margin: 10px 50px;
+  padding: 10px 50px;
 }
 
-.first-card button {
-  color: #D50032;
-  text-decoration: none;
-  margin-left: 50px;
+.top-links {
+  padding: 10px 50px;
+  button {
+    color: #D50032;
+    text-decoration: none;
+    // margin-left: 50px;
+  }
 }
 
 .exam-services {
@@ -21,55 +21,57 @@
   margin-left: 20px;
 }
 
-.second-card {
-  width: 50%;
+.description {
+  // width: 100%;
   background-color: transparent;
   box-shadow: none;
-}
-  .practice-exams h1 {
-    width: 75%;
-    font-size: 50px;
-    // border: 1px solid black;
-  }
-  .lets-do-this {
-    font-size: 3rem;
-    margin: 40px 0;
-  }
-  .paragraph {
-    color: gray;
-    font-size: 23px;
-    margin-bottom: 25px;
-    // border: 1px solid black;
-  }
-
-.nested-card-left {
-  max-width: 250px;
-  background-image: linear-gradient(to bottom right, #C67946, #9F3778);
-  color: #FFF;
-  margin-bottom: 30px;
-}
-.nested-card-right {
-  max-width: 250px;
-  background-image: linear-gradient(to bottom right, #C67946, #9F3778);
-  color: #FFF;
-  margin: 0 0 30px 15px;
+  // border: 1px solid black;
 }
 
-.purchase-btn {
-  color: #D50032;
-  font-weight: bold;
-  border: 2px solid #D50032;
-  border-radius: 20px;
-  margin: 10px 0 10px 50px;
-  padding: 0 40px;
+.practice-exams h1 {
+  // width: 100%;
+  font-size: 50px;
+  line-height: 1.2;
+
+}
+
+.paragraph {
+  color: gray;
+  font-size: 23px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  // width: 50%;
+  // border: 1px solid black;
+  h1 {
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
+.exam-cards mat-card {
+  width: 100%;
+  background-image: linear-gradient(to bottom right, #C67946, #9F3778);
+  color: #FFF;
+  margin: 15px;
   text-align: center;
+  mat-card-subtitle {
+    color: #FFF;
+  }
+  .purchase-btn {
+    color: #D50032;
+    font-weight: bold;
+    border: 2px solid #D50032;
+    border-radius: 20px;
+    margin: 10px 0;
+    padding: 0 40px;
+  }
 }
 
 .stats-card {
   padding: 0px 50px;
-  mat-card-content {
-    max-width: 25%;
-    padding: 15px 25px;
+  section {
+    width: 25% auto;
+    padding: 15px 30px;
     h1{
       font-size: 55px;
       font-weight: bold;
@@ -79,16 +81,15 @@
     p {
     color: #4F4A93;
     font-weight: bold;
-    font-size: 15px;
     }
   }
 }
 
 .lower-section {
-  padding: 0 50px;
+  padding: 15px 50px;
   margin-top: 15px;
   .pdf-box {
-    width: 50%;
+    // width: 50%;
     color: #FFF;
     background-color: #922269;
     .pdf-btn {
@@ -99,28 +100,23 @@
     }
   }
   .right-side {
-    width: 50%;
+    // width: 50%;
     color: gray;
     font-size: 20px;
     padding: 20px;
   }
 }
 
-
-// Custom scrollbar
-// .body {
-//   overflow-y: auto;
-// }
-// ::-webkit-scrollbar {
+// ::ng-deep ::-webkit-scrollbar {
 //   width: 10px;
 // }
-// ::-webkit-scrollbar-track {
+// ::ng-deep ::-webkit-scrollbar-track {
 //   border-radius: 10px;
 // }
-// ::-webkit-scrollbar-thumb {
+// ::ng-deep ::-webkit-scrollbar-thumb {
 //   background: #999;
 //   border-radius: 10px;
 // }
-// ::-webkit-scrollbar-thumb:hover {
+// ::ng-deep ::-webkit-scrollbar-thumb:hover {
 //   background: #aaa;
 // }

@@ -1,13 +1,31 @@
-<div>
-  <footer>
-    <mat-toolbar>
-      <mat-toolbar-row class="footer">
+<!-- <footer>
+  <mat-toolbar color="primary" class="app-footer">
+  <div class="flx-row-nwrp flx-jst-btwn-aln-cntr footer-content">
+
+  <div style="text-align:left" class="copy-right">
+  </div>
+
+  <div style="text-align:right" class="footer-links">
+  <a *ngIf="config.nabpHelpUrl" href="{{config.nabpHelpUrl}}" class="footer-link" target="_blank">{{helpText}}</a>
+  <a *ngIf="config.privacyPolicyUrl" href="{{config.privacyPolicyUrl}}" class="footer-link" target="_blank">{{privacyPolicyText}}</a>
+  <a *ngIf="config.termsUrl" href="{{config.termsUrl}}" class="footer-link" target="_blank">{{termsText}}</a>
+  </div>
+  </div>
+  </mat-toolbar>
+</footer> -->
+
+
+<div flx-row-nwrp flx-jst-btwn-aln-cntr>
+  <footer fxFlex="100%">
+    <mat-toolbar class="footer">
+      <!-- <mat-toolbar-row> -->
         <span class="footer-text">&#174; 2021 All Rights Reserved National Association of Boards of Pharmacy</span>
         <span class="spacer"></span>
-        <button mat-button><a href="https://nabp.pharmacy/help/" target="_blank">FAQs</a></button>
-        <button mat-button><a href="https://nabp.pharmacy/privacy-policy/"target="_blank">Privacy Policy</a></button>
-        <button mat-button><a href="https://nabp.pharmacy/terms-policies/nabp-terms-policies/" target="_blank">Terms & Conditions</a></button>
-      </mat-toolbar-row>
+          <a href="https://nabp.pharmacy/help/" target="_blank">FAQs</a>
+          <a href="https://nabp.pharmacy/privacy-policy/"target="_blank">Privacy Policy</a>
+          <a href="https://nabp.pharmacy/terms-policies/nabp-terms-policies/" target="_blank">Terms & Conditions</a>
+      <!-- </mat-toolbar-row> -->
     </mat-toolbar>
   </footer>
 </div>
+

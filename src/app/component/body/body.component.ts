@@ -14,12 +14,13 @@ export class BodyComponent implements OnInit {
   // Download/Save PDF method
   downloadPdf() {
     const pdfUrl = '../../../assets/pdf/hobbit-chapter-1.pdf';
-    const pdfName = 'The Hobbit, Page One';
+    const pdfName = 'Test PDF Page';
 
     FileSaver.saveAs(pdfUrl, pdfName);
   }
 
   constructor() { }
+
 
   ngOnInit(): void {
   }
