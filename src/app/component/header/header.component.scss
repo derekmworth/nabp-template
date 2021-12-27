@@ -1,9 +1,9 @@
 // Main header
 .header-toolbar {
   background-image: linear-gradient(to right, #D50032, #4F4A93 );
-  // position: fixed;
-  // top: 0;
-  // z-index: 1000;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   mat-toolbar-row {
     padding: 0;
   }
