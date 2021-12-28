@@ -1,18 +1,7 @@
 .background-image {
-  // z-index: -1;
   background: url('../../../assets/images/img-PracticeExams-hero-fullscreen.jpg') no-repeat center center;
   background-size: cover;
-  // margin: 10px 50px;
   padding: 10px 50px;
-}
-
-.top-links {
-  padding: 10px 50px;
-  button {
-    color: #D50032;
-    text-decoration: none;
-    // margin-left: 50px;
-  }
 }
 
 .exam-services {
@@ -67,23 +56,64 @@
   }
 }
 
-.stats-card {
-  padding: 0px 50px;
-  section {
-    width: 25% auto;
+.table {
+  // width: 80%;
+  width: auto;
+  padding: 20px 50px 0 50px;
+  .mat-cell {
+    text-align: center;
     padding: 15px 30px;
-    h1{
-      font-size: 55px;
-      font-weight: bold;
-      color: #3399FF;
-      text-align: center;
-    }
-    p {
+    font-size: 55px;
+    font-weight: bold;
+    color: #3399FF;
+    padding: 15px;
+    border: none;
+  }
+  .mat-footer-cell {
+    padding: 15px 30px;
     color: #4F4A93;
     font-weight: bold;
-    }
+    padding: 15px;
+    border: none;
   }
 }
+
+// .stats-table {
+//   padding: 15px 50px;
+//   th {
+//     width: auto;
+//     padding: 15px 30px;
+//     font-size: 55px;
+//     font-weight: bold;
+//     color: #3399FF;
+//   }
+//   td {
+//     width: auto;
+//     padding: 15px 30px;
+//     color: #4F4A93;
+//     font-weight: bold;
+//   }
+// }
+
+
+// .stats-card {
+//   padding: 0px 50px;
+//   section {
+//     width: 25% auto;
+//     padding: 15px 30px;
+//     h1{
+
+//       font-size: 55px;
+//       font-weight: bold;
+//       color: #3399FF;
+//       text-align: center;
+//     }
+//     p {
+//     color: #4F4A93;
+//     font-weight: bold;
+//     }
+//   }
+// }
 
 .lower-section {
   padding: 15px 50px;

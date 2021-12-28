@@ -1,11 +1,5 @@
 <app-header></app-header>
-
-<mat-card class="top-links">
-  <mat-card-content fxLayout.lt-sm="column" fxLayout="row">
-    <button mat-flat-button><b>Get Ready</b></button>
-    <button mat-flat-button>My Exam Activity</button>
-  </mat-card-content>
-</mat-card>
+<app-secondary-header></app-secondary-header>
 
 <section class="background-image">
 
@@ -60,7 +54,45 @@
 
 </section>
 
-<mat-card class="stats-card">
+<!-- <div> -->
+  <table mat-table [dataSource]="dataSource" class="table">
+
+    <!-- Description Column -->
+    <ng-container matColumnDef="description">
+      <td mat-cell *matCellDef="let nabp" fxLayout="row" fxLayout.lt-sm="column"> {{nabp.description}} </td>
+      <td mat-footer-cell *matFooterCellDef fxLayout="row" fxLayout.lt-sm="column">
+        Join the thousands of testing candidates who use the NABP practice exams
+        each year to get a trial run for test day that includes past questions,
+        similar formats, and similar timing.
+      </td>
+    </ng-container>
+
+    <!-- Pre-Naplex Tests Taken Column -->
+    <ng-container matColumnDef="preNaplex">
+      <td mat-cell *matCellDef="let nabp"> {{nabp.preNaplex}} </td>
+      <td mat-footer-cell *matFooterCellDef> Pre-NAPLEX practice exams are administered each year. </td>
+    </ng-container>
+
+    <!-- Pre-MPJE Tests Taken Column -->
+    <ng-container matColumnDef="preMpje">
+      <td mat-cell *matCellDef="let nabp"> {{nabp.preMpje}} </td>
+      <td mat-footer-cell *matFooterCellDef> Pre-MPJE practice exams were administered in 2020-the first launch year. </td>
+    </ng-container>
+
+    <!-- Naplex Tests Passed Column -->
+    <ng-container matColumnDef="naplexPassed">
+      <td mat-cell *matCellDef="let nabp"> {{nabp.naplexPassed}} </td>
+      <td mat-footer-cell *matFooterCellDef> of candidates taking a practice exam passed their NAPLEX on the first attempt. </td>
+    </ng-container>
+
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+
+  </table>
+<!-- </div> -->
+
+
+<!-- <mat-card class="stats-card">
   <mat-card-content fxLayout="row" fxLayout.lt-md="column">
     <section>
       <h1></h1>
@@ -83,7 +115,7 @@
       <p>of candidates taking a practice exam passed their NAPLEX on the first attempt.</p>
     </section>
   </mat-card-content>
-</mat-card>
+</mat-card> -->
 
 <div class="lower-section" fxLayout="row" fxLayout.lt-sm="column">
   <mat-card class="pdf-box">

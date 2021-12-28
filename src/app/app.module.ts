@@ -11,6 +11,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import { MaterialModule } from 'src/material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SecondaryHeaderComponent } from './component/secondary-header/secondary-header.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     BodyComponent,
     FooterComponent,
+    SecondaryHeaderComponent,
   ],
   imports: [
     BrowserModule,

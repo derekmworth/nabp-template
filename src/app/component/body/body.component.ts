@@ -4,6 +4,14 @@ import { Component, OnInit } from '@angular/core';
 declare var require: any
 const FileSaver = require('file-saver');
 
+// Table static data
+export interface nabpTests {
+  description: string;
+  preNaplex: string;
+  preMpje: string;
+  naplexPassed: string;
+}
+
 @Component({
   selector: 'app-body',
   templateUrl: './body.component.html',
@@ -18,6 +26,13 @@ export class BodyComponent implements OnInit {
 
     FileSaver.saveAs(pdfUrl, pdfName);
   }
+
+  // Table static data
+  displayedColumns: string[] = ['description', 'preNaplex', 'preMpje', 'naplexPassed'];
+
+  dataSource = [
+    { description: '', preNaplex: '14k', preMpje: '8k', naplexPassed: '85%'},
+  ];
 
   constructor() { }
 
