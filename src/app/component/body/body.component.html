@@ -54,13 +54,13 @@
 
 </section>
 
-<!-- <div> -->
-  <table mat-table [dataSource]="dataSource" class="table">
+<section fxLayout="row" fxLayout.lt-sm="column">
+  <table mat-table [dataSource]="dataSource" class="table" fxFlex.sm="100%" fxFlex.xs="100%">
 
     <!-- Description Column -->
     <ng-container matColumnDef="description">
-      <td mat-cell *matCellDef="let nabp" fxLayout="row" fxLayout.lt-sm="column"> {{nabp.description}} </td>
-      <td mat-footer-cell *matFooterCellDef fxLayout="row" fxLayout.lt-sm="column">
+      <th mat-header-cell *matCellDef="let nabp">  </th>
+      <td mat-footer-cell *matFooterCellDef>
         Join the thousands of testing candidates who use the NABP practice exams
         each year to get a trial run for test day that includes past questions,
         similar formats, and similar timing.
@@ -69,27 +69,27 @@
 
     <!-- Pre-Naplex Tests Taken Column -->
     <ng-container matColumnDef="preNaplex">
-      <td mat-cell *matCellDef="let nabp"> {{nabp.preNaplex}} </td>
+      <th mat-header-cell *matCellDef="let nabp"> {{nabp.preNaplex}} </th>
       <td mat-footer-cell *matFooterCellDef> Pre-NAPLEX practice exams are administered each year. </td>
     </ng-container>
 
     <!-- Pre-MPJE Tests Taken Column -->
     <ng-container matColumnDef="preMpje">
-      <td mat-cell *matCellDef="let nabp"> {{nabp.preMpje}} </td>
+      <th mat-header-cell *matCellDef="let nabp"> {{nabp.preMpje}} </th>
       <td mat-footer-cell *matFooterCellDef> Pre-MPJE practice exams were administered in 2020-the first launch year. </td>
     </ng-container>
 
     <!-- Naplex Tests Passed Column -->
     <ng-container matColumnDef="naplexPassed">
-      <td mat-cell *matCellDef="let nabp"> {{nabp.naplexPassed}} </td>
+      <th mat-header-cell *matCellDef="let nabp"> {{nabp.naplexPassed}} </th>
       <td mat-footer-cell *matFooterCellDef> of candidates taking a practice exam passed their NAPLEX on the first attempt. </td>
     </ng-container>
 
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    <tr mat-header-row *matRowDef="let row; columns: displayedColumns;"></tr>
     <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
 
   </table>
-<!-- </div> -->
+</section>
 
 
 <!-- <mat-card class="stats-card">
@@ -118,7 +118,7 @@
 </mat-card> -->
 
 <div class="lower-section" fxLayout="row" fxLayout.lt-sm="column">
-  <mat-card class="pdf-box">
+  <mat-card class="mat-elevation-z8 pdf-box">
     <mat-card-content>
       <p>
         We know the exam registration process can be overwhelming.
