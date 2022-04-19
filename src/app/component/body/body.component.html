@@ -35,8 +35,10 @@
         <p>You've spent hours upon hours studying.
           Now take yourself to the next level of preparation
           with this 100 question practice test.</p>
-          <button class="purchase-btn" mat-raised-button>Purchase</button>
       </mat-card-content>
+      <mat-card-footer>
+        <button class="purchase-btn" mat-raised-button>Purchase</button>
+      </mat-card-footer>
     </mat-card>
 
     <mat-card class="exam-card-right" fxFlex="20%" fxFlex.sm="100%" fxFlex.xs="100%"> <!--  -->
@@ -47,15 +49,17 @@
           to transferr an existing one, the Pre-MPJE is the
           best way to get started
         </p>
-          <button class="purchase-btn" mat-raised-button>Purchase</button>
       </mat-card-content>
+      <mat-card-footer>
+        <button class="purchase-btn" mat-raised-button>Purchase</button>
+      </mat-card-footer>
     </mat-card>
   </div>
 
 </section>
 
-<section fxLayout="row" fxLayout.lt-sm="column">
-  <table mat-table [dataSource]="dataSource" class="table" fxFlex.sm="100%" fxFlex.xs="100%">
+<div> <!-- fxShow="true" fxHide.lt-md="true"  -->
+  <table mat-table [dataSource]="dataSource" class="table"> <!--  fxFlex.sm="100%" fxFlex.xs="100%" -->
 
     <!-- Description Column -->
     <ng-container matColumnDef="description">
@@ -70,27 +74,32 @@
     <!-- Pre-Naplex Tests Taken Column -->
     <ng-container matColumnDef="preNaplex">
       <th mat-header-cell *matCellDef="let nabp"> {{nabp.preNaplex}} </th>
-      <td mat-footer-cell *matFooterCellDef> Pre-NAPLEX practice exams are administered each year. </td>
+      <td mat-footer-cell *matFooterCellDef>
+        Pre-NAPLEX practice exams are administered each year.
+      </td>
     </ng-container>
 
     <!-- Pre-MPJE Tests Taken Column -->
     <ng-container matColumnDef="preMpje">
       <th mat-header-cell *matCellDef="let nabp"> {{nabp.preMpje}} </th>
-      <td mat-footer-cell *matFooterCellDef> Pre-MPJE practice exams were administered in 2020-the first launch year. </td>
+      <td mat-footer-cell *matFooterCellDef>
+        Pre-MPJE practice exams were administered in 2020-the first launch year.
+      </td>
     </ng-container>
 
     <!-- Naplex Tests Passed Column -->
     <ng-container matColumnDef="naplexPassed">
       <th mat-header-cell *matCellDef="let nabp"> {{nabp.naplexPassed}} </th>
-      <td mat-footer-cell *matFooterCellDef> of candidates taking a practice exam passed their NAPLEX on the first attempt. </td>
+      <td mat-footer-cell *matFooterCellDef>
+        of candidates taking a practice exam passed their NAPLEX on the first attempt.
+      </td>
     </ng-container>
 
     <tr mat-header-row *matRowDef="let row; columns: displayedColumns;"></tr>
     <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
 
   </table>
-</section>
-
+</div>
 
 <!-- <mat-card class="stats-card">
   <mat-card-content fxLayout="row" fxLayout.lt-md="column">

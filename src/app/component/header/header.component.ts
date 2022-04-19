@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  userName = 'Derek Worth';
+  userName = 'Derek Michael Worth';
   userInitials = 'DW';
 
   // Mat-Badge hidden
